@@ -42,6 +42,14 @@
       ]
     },
     {
+      "title": "🛝 Environments & Secrets",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/27"
+      }]
+    },
+    {
       "title": "3. Deploy to production",
       "steps": [
         {
@@ -139,6 +147,14 @@
           "command": "git add . && git commit -m '4. production deploy' && git push && gh browse -n | xargs -I {} echo {}/actions | xargs open"
         }
       ]
+    },
+    {
+      "title": "🛝 Highlights",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/29"
+      }]
     }
   ]
 }

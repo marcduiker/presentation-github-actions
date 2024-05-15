@@ -78,6 +78,14 @@
       ]
     },
     {
+      "title": "🛝 GitHub token",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/18"
+      }]
+    },
+    {
       "title": "6. Elevate token permissions",
       "steps": [
         {
@@ -87,6 +95,14 @@
           "position": "67"
         }
       ]
+    },
+    {
+      "title": "🛝 Output variable",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/20"
+      }]
     },
     {
       "title": "7. Using environments",
@@ -136,6 +152,14 @@
           "command": "git add . && git commit -m '2. preview deploy' && git push && gh browse -n | xargs -I {} echo {}/actions | xargs open"
         }
       ]
+    },
+    {
+      "title": "🛝 Highlights",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/21"
+      }]
     }
   ]
 }

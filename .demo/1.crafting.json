@@ -18,6 +18,14 @@
       ]
     },
     {
+      "title": "🛝 Variables",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/15"
+      }]
+    },
+    {
       "title": "2. Add env variables",
       "steps": [
         {
@@ -91,6 +99,14 @@
           "command": "git add . && git commit -m '1. crafting' && git push && gh browse -n | xargs -I {} echo {}/actions | xargs open"
         }
       ]
+    },
+    {
+      "title": "🛝 Highlights",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/16"
+      }]
     }
   ]
 }

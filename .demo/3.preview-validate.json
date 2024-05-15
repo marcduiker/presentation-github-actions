@@ -74,6 +74,14 @@
       ]
     },
     {
+      "title": "🛝 Caching",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/23"
+      }]
+    },
+    {
       "title": "6. Add Playwright caching",
       "steps": [
         {
@@ -109,6 +117,14 @@
           "command": "git add . && git commit -m '3. preview validate' && git push && gh browse -n | xargs -I {} echo {}/actions | xargs open"
         }
       ]
+    },
+    {
+      "title": "🛝 Highlights",
+      "steps": [{
+        "action": "executeVSCodeCommand",
+        "command": "simpleBrowser.show",
+        "args": "https://estruyf.github.io/github-actions-presentation-test/25"
+      }]
     }
   ]
 }
