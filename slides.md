@@ -356,7 +356,7 @@ preview-deploy:
 jobs:
   job1:
     outputs:
-      name: ${{ steps.step1.outputs.website }}
+      website: ${{ steps.step1.outputs.website }}
 ```
 
 </v-click>
