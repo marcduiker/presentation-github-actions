@@ -1,5 +1,9 @@
 {
   "editor.formatOnSave": false,
   "demoTime.highlightZoomEnabled": false,
-  "demoTime.highlightBorderColor": "rgb(237, 18, 146)"
+  "demoTime.highlightBorderColor": "rgb(237, 18, 146)",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#0969da",
+    "activityBar.activeBackground": "#eaeef2"
+  },
 }

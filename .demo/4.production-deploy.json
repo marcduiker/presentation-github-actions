@@ -47,6 +47,9 @@
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
         "args": "https://estruyf.github.io/github-actions-presentation-test/27"
+      }, {
+        "action": "executeVSCodeCommand",
+        "command": "workbench.action.closeSidebar"
       }]
     },
     {
@@ -154,6 +157,9 @@
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
         "args": "https://estruyf.github.io/github-actions-presentation-test/29"
+      }, {
+        "action": "executeVSCodeCommand",
+        "command": "workbench.action.closeSidebar"
       }]
     }
   ]

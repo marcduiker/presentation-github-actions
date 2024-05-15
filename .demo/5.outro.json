@@ -10,6 +10,9 @@
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
         "args": "https://estruyf.github.io/github-actions-presentation-test/30"
+      }, {
+        "action": "executeVSCodeCommand",
+        "command": "workbench.action.closeSidebar"
       }]
     }
   ]
