@@ -549,6 +549,21 @@ background: ./slides/ideas.jpg
 ---
 ---
 
+# Running actions locally
+
+By using the [act](https://nektosact.com/) tool, you can run your workflows locally
+
+```bash
+# Install
+brew install act
+
+# Run
+act
+```
+
+---
+---
+
 # There is still more to explore
 
 - GitHub Actions Marketplace
