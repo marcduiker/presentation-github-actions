@@ -25,19 +25,13 @@
       "title": "2. Create the production artifact",
       "steps": [
         {
-          "action": "unselect",
-          "path": "/.github/workflows/main.yml"
-        },
-        {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./production-deploy/step2.yml",
-          "position": "39"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "40:46"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./production-deploy/step2.yml",
+            "CONTENT_POSITION": "39",
+            "HIGHLIGHT_POSITION": "40:46"
+          }
         }
       ]
     },
@@ -56,19 +50,13 @@
       "title": "3. Deploy to production",
       "steps": [
         {
-          "action": "unselect",
-          "path": "/.github/workflows/main.yml"
-        },
-        {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./production-deploy/step3.yml",
-          "position": "143"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "167:168"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./production-deploy/step3.yml",
+            "CONTENT_POSITION": "143",
+            "HIGHLIGHT_POSITION": "167:168"
+          }
         }
       ]
     },

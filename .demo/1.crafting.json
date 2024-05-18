@@ -32,15 +32,13 @@
       "title": "2. Add env variables",
       "steps": [
         {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./crafting/step2.yml",
-          "position": "8"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "9:12"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./crafting/step2.yml",
+            "CONTENT_POSITION": "8",
+            "HIGHLIGHT_POSITION": "9:12"
+          }
         }
       ]
     },
@@ -74,19 +72,13 @@
       "title": "4. Add caching",
       "steps": [
         {
-          "action": "unselect",
-          "path": "/.github/workflows/main.yml"
-        },
-        {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./crafting/step4.yml",
-          "position": "24"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "21:24"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./crafting/step4.yml",
+            "CONTENT_POSITION": "24",
+            "HIGHLIGHT_POSITION": "21:24"
+          }
         }
       ]
     },

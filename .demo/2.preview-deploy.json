@@ -46,19 +46,13 @@
       "title": "4. Depend on job",
       "steps": [
         {
-          "action": "unselect",
-          "path": "/.github/workflows/main.yml"
-        },
-        {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./preview-deploy/step4.yml",
-          "position": "42"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "40:42"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./preview-deploy/step4.yml",
+            "CONTENT_POSITION": "42",
+            "HIGHLIGHT_POSITION": "40:42"
+          }
         }
       ]
     },
@@ -114,15 +108,13 @@
       "title": "7. Using environments",
       "steps": [
         {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./preview-deploy/step7.yml",
-          "position": "72"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "73:75"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./preview-deploy/step7.yml",
+            "CONTENT_POSITION": "72",
+            "HIGHLIGHT_POSITION": "73:75"
+          }
         }
       ]
     },
@@ -130,19 +122,13 @@
       "title": "8. Log to job summary",
       "steps": [
         {
-          "action": "unselect",
-          "path": "/.github/workflows/main.yml"
-        },
-        {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./preview-deploy/step8.yml",
-          "position": "85"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "86:88"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./preview-deploy/step8.yml",
+            "CONTENT_POSITION": "85",
+            "HIGHLIGHT_POSITION": "86:88"
+          }
         }
       ]
     },

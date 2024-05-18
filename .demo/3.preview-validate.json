@@ -25,15 +25,13 @@
       "title": "2. Add the test job",
       "steps": [
         {
-          "action": "insert",
-          "path": "/.github/workflows/main.yml",
-          "contentPath": "./preview-validate/step2.yml",
-          "position": "89"
-        },
-        {
-          "action": "highlight",
-          "path": "/.github/workflows/main.yml",
-          "position": "96:98"
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./preview-validate/step2.yml",
+            "CONTENT_POSITION": "89",
+            "HIGHLIGHT_POSITION": "96:98"
+          }
         }
       ]
     },
