@@ -67,6 +67,25 @@ social2: eliostruyf.com
 social3: elio@struyfconsulting.be
 ---
 
+<div class="recognitions">
+  <img src="/profile/github.svg" height="30px" />
+  <img src="/profile/mvp.svg" height="30px" />
+  <img src="/profile/gde.svg" height="30px" />
+</div>
+
+<style>
+  .recognitions {
+    display: flex;
+    gap: 1rem;
+    background: #F8F8F8;
+    padding: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    z-index: 999;
+    bottom: 1rem;
+  }
+</style>
+
 ---
 layout: cover
 background: ./slides/githubactions.svg
@@ -608,3 +627,22 @@ social1: "@eliostruyf"
 social2: eliostruyf.com
 social3: elio@struyfconsulting.be
 ---
+
+<div class="recognitions">
+  <img src="/profile/github.svg" height="30px" />
+  <img src="/profile/mvp.svg" height="30px" />
+  <img src="/profile/gde.svg" height="30px" />
+</div>
+
+<style>
+  .recognitions {
+    display: flex;
+    gap: 1rem;
+    background: #F8F8F8;
+    padding: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    z-index: 999;
+    bottom: 1rem;
+  }
+</style>
