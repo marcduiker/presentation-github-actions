@@ -580,7 +580,7 @@ background: ./slides/thankyou.jpg
 
 <style>
   .slidev-layout.default {
-    background: url(./slides/thankyou.jpg) no-repeat center center !important;
+    background: url(/slides/thankyou.jpg) no-repeat center center !important;
     position: relative;
   }
 
