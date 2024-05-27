@@ -76,7 +76,7 @@
       "steps": [{
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
-        "args": "https://estruyf.github.io/github-actions-presentation-test/18"
+        "args": "https://slides.elio.dev/20240515-cloudsummit/18"
       }, {
         "action": "executeVSCodeCommand",
         "command": "workbench.action.closeSidebar"
@@ -98,7 +98,7 @@
       "steps": [{
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
-        "args": "https://estruyf.github.io/github-actions-presentation-test/20"
+        "args": "https://slides.elio.dev/20240515-cloudsummit/20"
       }, {
         "action": "executeVSCodeCommand",
         "command": "workbench.action.closeSidebar"
@@ -150,7 +150,7 @@
       "steps": [{
         "action": "executeVSCodeCommand",
         "command": "simpleBrowser.show",
-        "args": "https://estruyf.github.io/github-actions-presentation-test/21"
+        "args": "https://slides.elio.dev/20240515-cloudsummit/21"
       }, {
         "action": "executeVSCodeCommand",
         "command": "workbench.action.closeSidebar"
