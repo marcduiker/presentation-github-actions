@@ -15,9 +15,19 @@ This repository contains the slides and demos for the session "From Code to Clou
 - Create two environments in your repository
   - `preview`
   - `production`
-- Add the `AZURE_STATIC_WEB_APPS_API_TOKEN` secret to the production environment
+- Add the `AZURE_STATIC_WEB_APPS_API_TOKEN` secret to the preview & production environment
 - In the pages setting, set the source to `GitHub Actions` instead of a branch
 - Ready to start
+
+## Clean up after the session
+
+Remove all workflow runs:
+
+```bash
+repo=$(gh repo view --json nameWithOwner | jq -r .nameWithOwner)
+gh api repos/$repo/actions/runs --paginate | jq -r -c '.workflow_runs[] | "\(.id)"' | \
+xargs -n1 -I % gh api repos/$repo/actions/runs/% -X DELETE | jq -r .status
+```
 
 ## Quick links
 

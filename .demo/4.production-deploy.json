@@ -38,12 +38,11 @@
     {
       "title": "🛝 Environments & Secrets",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/27"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/27"
+        }
       }]
     },
     {
@@ -142,12 +141,11 @@
     {
       "title": "🛝 Highlights",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/29"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/29"
+        }
       }]
     }
   ]

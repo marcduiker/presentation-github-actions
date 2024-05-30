@@ -74,12 +74,11 @@
     {
       "title": "🛝 Caching",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/23"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/23"
+        }
       }]
     },
     {
@@ -122,12 +121,11 @@
     {
       "title": "🛝 Highlights",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/25"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/25"
+        }
       }]
     }
   ]

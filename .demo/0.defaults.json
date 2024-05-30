@@ -7,12 +7,11 @@
     {
       "title": "🛝 Open slides",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/"
+        }
       }]
     }
   ]

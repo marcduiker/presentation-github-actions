@@ -20,12 +20,11 @@
     {
       "title": "🛝 Variables",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/15"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/15"
+        }
       }]
     },
     {
@@ -98,12 +97,11 @@
     {
       "title": "🛝 Highlights",
       "steps": [{
-        "action": "executeVSCodeCommand",
-        "command": "simpleBrowser.show",
-        "args": "https://slides.elio.dev/20240515-cloudsummit/16"
-      }, {
-        "action": "executeVSCodeCommand",
-        "command": "workbench.action.closeSidebar"
+        "action": "snippet",
+        "contentPath": "./snippets/show_slide.json",
+        "args": {
+          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/16"
+        }
       }]
     }
   ]
