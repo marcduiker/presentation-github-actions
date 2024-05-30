@@ -7,6 +7,11 @@ This repository contains the slides and demos for the session "From Code to Clou
 - `WEBSITE_URL`: `https://estruyf.github.io/presentation-github-actions/`
 - `WEBSITE_URL`: `https://github-actions.elio.dev`
 
+### Azure Static Web Apps
+
+- Preview: `https://ambitious-mud-08855ab03-preview.westeurope.5.azurestaticapps.net/`
+- Production: `https://ambitious-mud-08855ab03.5.azurestaticapps.net/` | `https://github-actions.elio.dev`
+
 ## Before you start
 
 - Create a new repository
