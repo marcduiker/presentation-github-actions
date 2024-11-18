@@ -8,6 +8,14 @@
       "title": "1. Open workflow",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
         },
