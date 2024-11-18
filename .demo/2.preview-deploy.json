@@ -95,6 +95,14 @@
       "title": "6. Elevate token permissions",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "insert",
           "path": "/.github/workflows/main.yml",
           "contentPath": "./preview-deploy/step6.yml",
