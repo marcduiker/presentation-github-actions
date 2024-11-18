@@ -8,6 +8,14 @@
       "title": "1. Open workflow",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
         },
@@ -50,6 +58,14 @@
       "id": "4.production.deploy",
       "title": "3. Deploy to production",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",

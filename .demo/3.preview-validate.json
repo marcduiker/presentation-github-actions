@@ -8,6 +8,14 @@
       "title": "1. Open workflow",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
         },
@@ -82,6 +90,14 @@
       "id": "2.preview.caching",
       "title": "6. Add Playwright caching",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "open",
           "path": "/.github/workflows/main.yml"
