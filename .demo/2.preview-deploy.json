@@ -77,7 +77,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/18"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/18"
         }
       }]
     },
@@ -98,7 +98,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/20"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/20"
         }
       }]
     },
@@ -149,7 +149,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/21"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/21"
         }
       }]
     }

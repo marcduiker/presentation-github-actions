@@ -144,7 +144,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - visugxl
 jobs:
   build:
     runs-on: ubuntu-latest

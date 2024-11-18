@@ -41,7 +41,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/27"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/27"
         }
       }]
     },
@@ -144,7 +144,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/29"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/29"
         }
       }]
     }
