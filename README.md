@@ -34,6 +34,15 @@ gh api repos/$repo/actions/runs --paginate | jq -r -c '.workflow_runs[] | "\(.id
 xargs -n1 -I % gh api repos/$repo/actions/runs/% -X DELETE | jq -r .status
 ```
 
+Reset the waiting HTML on the site
+
+```bash
+rm -rf ./dist
+mkdir ./dist
+cp ./public/waiting.html ./dist/index.html
+swa deploy ./dist --deployment-token <token> --env production
+```
+
 ## Quick links
 
 - [Actions](https://github.com/estruyf/presentation-github-actions/actions)
