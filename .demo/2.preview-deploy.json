@@ -125,6 +125,14 @@
       "title": "7. Using environments",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
           "args": {
