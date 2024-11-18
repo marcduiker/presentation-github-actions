@@ -4,8 +4,17 @@
   "description": "",
   "demos": [
     {
+      "id": "1.crafting.craft-workflow",
       "title": "1. Craft a GitHub Actions workflow",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "create",
           "path": "/.github/workflows/main.yml",
@@ -23,13 +32,22 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/15"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/15"
         }
       }]
     },
     {
+      "id": "1.crafting.add-variables",
       "title": "2. Add env variables",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
@@ -100,7 +118,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/16"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/16"
         }
       }]
     }

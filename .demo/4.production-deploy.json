@@ -4,8 +4,17 @@
   "description": "",
   "demos": [
     {
+      "id": "4.production.start",
       "title": "1. Open workflow",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
@@ -41,13 +50,22 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/27"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/27"
         }
       }]
     },
     {
+      "id": "4.production.deploy",
       "title": "3. Deploy to production",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
@@ -64,11 +82,7 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "echo \"https://github-actions.elio.dev\" | pbcopy"
-        },
-        {
-          "action": "executeTerminalCommand",
-          "command": "gh browse -n | xargs -I {} echo {}/settings | xargs open"
+          "command": "echo \"https://github-actions.elio.dev\" | pbcopy && gh browse -n | xargs -I {} echo {}/settings | xargs open"
         }
       ]
     },
@@ -144,7 +158,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/29"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/29"
         }
       }]
     }

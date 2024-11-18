@@ -4,8 +4,17 @@
   "description": "",
   "demos": [
     {
+      "id": "2.preview.open-workflow",
       "title": "1. Open workflow",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
@@ -77,13 +86,22 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/18"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/18"
         }
       }]
     },
     {
+      "id": "2.preview.elevate-token",
       "title": "6. Elevate token permissions",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "insert",
           "path": "/.github/workflows/main.yml",
@@ -98,13 +116,22 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/20"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/20"
         }
       }]
     },
     {
+      "id": "2.preview.output-variables",
       "title": "7. Using environments",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
@@ -149,7 +176,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/21"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/21"
         }
       }]
     }

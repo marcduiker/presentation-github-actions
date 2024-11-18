@@ -4,8 +4,17 @@
   "description": "",
   "demos": [
     {
+      "id": "3.e2e.start",
       "title": "1. Open workflow",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "unselect",
           "path": "/.github/workflows/main.yml"
@@ -63,11 +72,7 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "echo \"https://estruyf.github.io/presentation-github-actions/\" | pbcopy"
-        },
-        {
-          "action": "executeTerminalCommand",
-          "command": "gh browse -n | xargs -I {} echo {}/settings | xargs open"
+          "command": "echo \"https://estruyf.github.io/presentation-github-actions/\" | pbcopy && gh browse -n | xargs -I {} echo {}/settings | xargs open"
         }
       ]
     },
@@ -77,13 +82,22 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/23"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/23"
         }
       }]
     },
     {
+      "id": "2.preview.caching",
       "title": "6. Add Playwright caching",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "open",
           "path": "/.github/workflows/main.yml"
@@ -124,7 +138,7 @@
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",
         "args": {
-          "SLIDES_URL": "https://slides.elio.dev/20240515-cloudsummit/25"
+          "SLIDES_URL": "https://slides.elio.dev/20241120-visugxl/25"
         }
       }]
     }
