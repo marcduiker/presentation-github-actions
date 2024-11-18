@@ -8,6 +8,14 @@
       "title": "1. Craft a GitHub Actions workflow",
       "steps": [
         {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
           "action": "create",
           "path": "/.github/workflows/main.yml",
           "contentPath": "./crafting/step1.yml"
@@ -32,6 +40,14 @@
       "id": "1.crafting.add-variables",
       "title": "2. Add env variables",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closeSidebar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
