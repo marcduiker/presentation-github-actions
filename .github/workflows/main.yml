@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - visugxl
+      - visugxltest
 
 env:
   github_artifact: github-website
