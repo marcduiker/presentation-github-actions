@@ -1,5 +1,5 @@
 ---
-theme: the-unnamed
+theme: monomi
 highlighter: shiki
 transition: slide-left
 mdc: true
@@ -9,95 +9,26 @@ title: "From Code to Cloud: Automated Deployments with GitHub Actions"
 addons:
   - slidev-addon-components
 
-fonts:
-  sans: "Lato,cursive"
-
 themeConfig:
-  color: "#000000"
-  background: "#215287"
+  code-padding: "0"
+---
 
-  font-size: "2em"
+# Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions
 
-  cover-background: "#ffffff"
-  cover-headingBg: "#215287"
-  cover-headingColor: "#F8F8F8"
+&mdash; by [Elio Struyf](https://eliostruyf.com)
 
-  default-background: "#F8F8F8"
-  default-headingBg: "#215287"
-  default-headingColor: "#F8F8F8"
-  default-font-size: "1.4rem"
-
-  center-background: "#F8F8F8"
-  center-headingBg: "#215287"
-  center-headingColor: "#F8F8F8"
-
-  section-background: "#F8F8F8"
-  section-headingBg: "#215287"
-  section-headingColor: "#F8F8F8"
-
-  aboutme-background: "#F8F8F8"
-  aboutme-color: var(--slidev-theme-color)
-  aboutme-helloBg: "#215287"
-  aboutme-helloColor: "#F8F8F8"
-  aboutme-nameColor: "#215287"
-
-  code-background: "#215287"
-  code-color: "#F8F8F8"
-  code-font-size: 1.1em
-
-layout: image
-image: ./cloudsummit/title.png
+---
+src: ./pages/hello.md
 ---
 
 ---
-layout: image
-image: ./cloudsummit/sponsor.png
+layout: section
+invert: true
 ---
 
----
-layout: about-me
-imageSrc: ./profile/eliostruyf_2023.jpg
-helloMsg: 👋 Hello!
-name: Elio Struyf
-job: Struyf Consulting
-line1: "#Stickerpreneur @ pyod.shop"
-line2: "#Maintainer @ Front Matter CMS"
-social1: "@eliostruyf"
-social2: eliostruyf.com
-social3: elio@struyfconsulting.be
----
+# Understanding GitHub Actions
 
-<div class="recognitions">
-  <img src="/profile/github.svg" height="30px" />
-  <img src="/profile/mvp.svg" height="30px" />
-  <img src="/profile/gde.svg" height="30px" />
-</div>
-
-<style>
-  .recognitions {
-    display: flex;
-    gap: 1rem;
-    background: #F8F8F8;
-    padding: 0.5rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    z-index: 999;
-    bottom: 1rem;
-  }
-</style>
-
----
-layout: cover
-background: ./slides/githubactions.svg
----
-
-# Understanding GitHub Actions: <br /> Fundamentals and terminology
-
-<style>
-  h1 {
-    font-size: 3.5rem !important;
-  }
-</style>
+## Fundamentals and terminology
 
 ---
 ---
@@ -135,18 +66,13 @@ background: ./slides/githubactions.svg
 | GitHub Enterprise Cloud | 50,000 |
 
 ---
-layout: cover
-background: ./slides/warning.jpg
+layout: fact
+invert: true
 ---
 
-# Mind the minute multipliers!!!
+# Mind the minute multipliers!
 
-<style>
-  h1::before {
-    background: #EE4266 !important;
-  }
-</style>
-
+---
 ---
 
 # Minute what?
@@ -166,8 +92,8 @@ background: ./slides/warning.jpg
 **Large runners** are more expensive (only for orgs and enterprises)
 
 ---
-layout: cover
-background: ./slides/terminology.jpg
+layout: section
+invert: true
 ---
 
 # GitHub Actions Terminology
@@ -233,11 +159,13 @@ jobs:
 ```
 
 ---
-layout: cover
-background: ./slides/craft.jpg
+layout: section
+invert: true
 ---
 
-# Building Blocks: <br /> Crafting your first GitHub Actions workflow
+# Building Blocks
+
+## Crafting your first GitHub Actions workflow
 
 <!--
 - Explain the process of what we are going to do in the GH Actions workflow
@@ -259,6 +187,7 @@ Highlights:
 - Running the first workflow
 -->
 
+---
 ---
 
 # Variables
@@ -284,6 +213,8 @@ Highlights:
 4. Variables and contexts can be used in the workflow
 5. Setting your variables like with `>> $GITHUB_ENV`
 
+<br />
+
 ```bash
 echo "{environment_variable_name}={value}" >> $GITHUB_ENV
 ```
@@ -293,12 +224,21 @@ echo "{environment_variable_name}={value}" >> $GITHUB_ENV
 [GitHub Variables](https://docs.github.com/en/actions/learn-github-actions/variables) - 
 [GitHub Context](https://docs.github.com/en/actions/learn-github-actions/contexts)
 
+<style>
+  .slidev-layout .slidev-code-wrapper code {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+</style>
+
 ---
-layout: cover
-background: ./slides/deploy.jpg
+layout: section
+invert: true
 ---
 
-# From Artifact to Deployment: <br /> Deploy your website
+# From Artifact to Deployment
+
+## Deploy your website
 
 <!--
 - Start by a dependent job
@@ -360,14 +300,16 @@ preview-deploy:
 #### Step 1: Set the variable
 
 ```yaml
-    steps:
-      - id: step1 # Required
-        run: |
-          # {name}={value}
-          echo "website=https://..." >> $GITHUB_OUTPUT
+steps:
+  - id: step1 # Required
+    run: |
+      # {name}={value}
+      echo "website=https://..." >> $GITHUB_OUTPUT
 ```
 
 <v-click>
+
+<br /> 
 
 #### Step 2: Define the output
 
@@ -379,6 +321,8 @@ jobs:
 ```
 
 </v-click>
+
+<br /> 
 
 <v-click>
 
@@ -405,11 +349,12 @@ jobs:
 - Add information to the job summary via `>> $GITHUB_STEP_SUMMARY`
 
 ---
-layout: cover
-background: ./slides/testing.jpg
+layout: section
 ---
 
-# Ensuring Success: <br /> Validating the deployment
+# Ensuring Success
+
+## Validating the deployment
 
 <!--
 - Create a new dependent job for testing
@@ -476,11 +421,12 @@ Conditions can be added to jobs and steps to control when they run
   - Using secrets: `secrets.{name}`
 
 ---
-layout: cover
-background: ./slides/azure.jpg
+layout: section
 ---
 
-# Expanding Horizons: <br /> Using environments
+# Expanding Horizons
+
+## Using environments
 
 <!--
 - Create a new job for deploying to Azure
@@ -541,8 +487,7 @@ jobs:
 - Set `secrets.{name}` to use the secret in the workflow
 
 ---
-layout: cover
-background: ./slides/ideas.jpg
+layout: section
 ---
 
 # There is a lot more to discover
@@ -616,33 +561,5 @@ background: ./slides/thankyou.jpg
 </style>
 
 ---
-layout: about-me
-imageSrc: ./profile/eliostruyf_2023.jpg
-helloMsg: The end! 👋
-name: Elio Struyf
-job: Struyf Consulting
-line1: "#Stickerpreneur @ pyod.shop"
-line2: "#Maintainer @ Front Matter CMS"
-social1: "@eliostruyf"
-social2: eliostruyf.com
-social3: elio@struyfconsulting.be
+src: ./pages/thanks.md
 ---
-
-<div class="recognitions">
-  <img src="/profile/github.svg" height="30px" />
-  <img src="/profile/mvp.svg" height="30px" />
-  <img src="/profile/gde.svg" height="30px" />
-</div>
-
-<style>
-  .recognitions {
-    display: flex;
-    gap: 1rem;
-    background: #F8F8F8;
-    padding: 0.5rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    z-index: 999;
-    bottom: 1rem;
-  }
-</style>

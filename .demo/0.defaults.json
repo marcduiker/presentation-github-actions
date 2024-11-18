@@ -5,7 +5,11 @@
   "description": "",
   "demos": [
     {
-      "title": "🛝 Open slides",
+      "title": "Open slides",
+      "icons": {
+        "start": "vm",
+        "end": "vm-active"
+      },
       "steps": [{
         "action": "snippet",
         "contentPath": "./snippets/show_slide.json",

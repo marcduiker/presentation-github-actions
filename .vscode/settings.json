@@ -1,10 +1,18 @@
 {
   "editor.formatOnSave": false,
-  "demoTime.highlightZoomEnabled": false,
+  "remoteControl.enable": true,
+  "remoteControl.port": 37105,
+  "files.associations": {
+    "**/.demo/**/*.json": "jsonc"
+  },
   "demoTime.highlightBorderColor": "rgb(237, 18, 146)",
   "workbench.colorCustomizations": {
-    "activityBar.activeBorder": "#0969da",
-    "activityBar.activeBackground": "#eaeef2"
+    "activityBar.activeBackground": "#eaeef2",
+    "titleBar.activeBackground": "#000",
+    "titleBar.activeForeground": "#fff",
+    "titleBar.inactiveBackground": "#00000099",
   },
-  "workbench.colorTheme": "GitHub Light Default",
+  "workbench.colorTheme": "Front Matter CMS Theme",
+  "demoTime.showClock": true,
+  "demoTime.timer": 50
 }
