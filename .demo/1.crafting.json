@@ -4,6 +4,7 @@
   "description": "",
   "demos": [
     {
+      "id": "1.crafting.craft-workflow",
       "title": "1. Craft a GitHub Actions workflow",
       "steps": [
         {
@@ -28,6 +29,7 @@
       }]
     },
     {
+      "id": "1.crafting.add-variables",
       "title": "2. Add env variables",
       "steps": [
         {

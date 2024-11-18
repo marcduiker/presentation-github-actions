@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": false,
   "remoteControl.enable": true,
-  "remoteControl.port": 37105,
+  "remoteControl.port": 37106,
   "files.associations": {
     "**/.demo/**/*.json": "jsonc"
   },
@@ -14,5 +14,6 @@
   },
   "workbench.colorTheme": "Front Matter CMS Theme",
   "demoTime.showClock": true,
-  "demoTime.timer": 50
+  "demoTime.timer": 60,
+  "demoTime.lineInsertionDelay": 0
 }

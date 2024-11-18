@@ -4,6 +4,7 @@
   "description": "",
   "demos": [
     {
+      "id": "2.preview.open-workflow",
       "title": "1. Open workflow",
       "steps": [
         {
@@ -82,6 +83,7 @@
       }]
     },
     {
+      "id": "2.preview.elevate-token",
       "title": "6. Elevate token permissions",
       "steps": [
         {
@@ -103,6 +105,7 @@
       }]
     },
     {
+      "id": "2.preview.output-variables",
       "title": "7. Using environments",
       "steps": [
         {

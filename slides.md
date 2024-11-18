@@ -167,6 +167,39 @@ invert: true
 
 ## Crafting your first GitHub Actions workflow
 
+---
+clicks: 1
+---
+
+# The demo
+
+```mermaid
+flowchart LR
+  crafting[Craft a workflow]
+  preview[Preview deployment]
+  validate[Validate deployment]
+  production[Deploy to production]
+
+  classDef startClass fill:#44ffd2,color:black
+  classDef endClass fill:#f141a8,color:black
+
+  crafting:::startClass --> preview
+  preview --> validate
+  validate --> production:::endClass
+```
+
+<br />
+
+- **Preview**: Deploy to GitHub Pages
+- **Validate**: Test the deployment with Playwright
+- **Production**: Deploy to Azure
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="1.crafting.craft-workflow" />
+
 <!--
 - Explain the process of what we are going to do in the GH Actions workflow
 - Create the `.github/workflows` directory and add a YAML file
@@ -188,6 +221,7 @@ Highlights:
 -->
 
 ---
+clicks: 1
 ---
 
 # Variables
@@ -201,6 +235,12 @@ Highlights:
 - [Default environment variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables): `GITHUB_*` and `RUNNER_*`
   - `GITHUB_REPOSITORY`: `owner/repo`
   - `GITHUB_REPOSITORY_OWNER`: `owner`
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="1.crafting.add-variables" />
 
 ---
 ---
@@ -233,12 +273,19 @@ echo "{environment_variable_name}={value}" >> $GITHUB_ENV
 
 ---
 layout: section
+clicks: 1
 invert: true
 ---
 
 # From Artifact to Deployment
 
 ## Deploy your website
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="2.preview.open-workflow" />
 
 <!--
 - Start by a dependent job
@@ -277,6 +324,7 @@ Comes with **default** permissions depending on the repo settings
 </v-click>
 
 ---
+clicks: 1
 ---
 
 # Elevate the GITHUB_TOKEN permissions
@@ -292,7 +340,14 @@ preview-deploy:
     id-token: write
 ```
 
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="2.preview.elevate-token" />
+
 ---
+clicks: 3
 ---
 
 # Job output variables
@@ -337,6 +392,12 @@ jobs:
 
 </v-click>
 
+<vscode-action
+    click="3"
+    port="37106"
+    command="demo-time.runById"
+    args="2.preview.output-variables" />
+
 ---
 ---
 
@@ -350,11 +411,19 @@ jobs:
 
 ---
 layout: section
+invert: true
+clicks: 1
 ---
 
 # Ensuring Success
 
 ## Validating the deployment
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="3.e2e.start" />
 
 <!--
 - Create a new dependent job for testing
@@ -389,6 +458,7 @@ Use `actions/cache` to cache dependencies
 ```
 
 ---
+clicks: 3
 ---
 
 # Conditions
@@ -410,6 +480,12 @@ Conditions can be added to jobs and steps to control when they run
 
 </v-click>
 
+<vscode-action
+    click="3"
+    port="37106"
+    command="demo-time.runById"
+    args="2.preview.caching" />
+
 ---
 
 # Highlights
@@ -422,11 +498,19 @@ Conditions can be added to jobs and steps to control when they run
 
 ---
 layout: section
+invert: true
+clicks: 1
 ---
 
 # Expanding Horizons
 
 ## Using environments
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="4.production.start" />
 
 <!--
 - Create a new job for deploying to Azure
@@ -464,6 +548,8 @@ jobs:
 ```
 
 ---
+clicks: 1
+---
 
 # Secrets
 
@@ -475,6 +561,12 @@ jobs:
 - Access policy on organization-level
 - Values are masked in build outputs
 - Set as input or environment variable to use them
+
+<vscode-action
+    click="1"
+    port="37106"
+    command="demo-time.runById"
+    args="4.production.deploy" />
 
 ---
 ---

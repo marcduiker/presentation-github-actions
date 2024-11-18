@@ -4,6 +4,7 @@
   "description": "",
   "demos": [
     {
+      "id": "4.production.start",
       "title": "1. Open workflow",
       "steps": [
         {
@@ -46,6 +47,7 @@
       }]
     },
     {
+      "id": "4.production.deploy",
       "title": "3. Deploy to production",
       "steps": [
         {
@@ -64,11 +66,7 @@
       "steps": [
         {
           "action": "executeTerminalCommand",
-          "command": "echo \"https://github-actions.elio.dev\" | pbcopy"
-        },
-        {
-          "action": "executeTerminalCommand",
-          "command": "gh browse -n | xargs -I {} echo {}/settings | xargs open"
+          "command": "echo \"https://github-actions.elio.dev\" | pbcopy && gh browse -n | xargs -I {} echo {}/settings | xargs open"
         }
       ]
     },
