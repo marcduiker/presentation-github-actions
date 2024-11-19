@@ -71,8 +71,8 @@
           "contentPath": "./snippets/insert_and_highlight.json",
           "args": {
             "CONTENT_PATH": "./production-deploy/step3.yml",
-            "CONTENT_POSITION": "143",
-            "HIGHLIGHT_POSITION": "167:168"
+            "CONTENT_POSITION": "146",
+            "HIGHLIGHT_POSITION": "170:171"
           }
         }
       ]
@@ -115,12 +115,12 @@
           "action": "replace",
           "path": "/.github/workflows/main.yml",
           "contentPath": "./production-deploy/step6.yml",
-          "position": "109:142"
+          "position": "112:145"
         },
         {
           "action": "highlight",
           "path": "/.github/workflows/main.yml",
-          "position": "115:118"
+          "position": "118:121"
         }
       ]
     },
@@ -135,7 +135,7 @@
           "action": "insert",
           "path": "/.github/workflows/main.yml",
           "contentPath": "./production-deploy/step7.yml",
-          "position": "149"
+          "position": "152"
         }
       ]
     },

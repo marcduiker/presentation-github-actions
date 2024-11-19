@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - visugxl
+      - visugxl-test
 
 env:
   github_artifact: github-website
@@ -74,6 +74,9 @@ jobs:
       name: preview
       url: ${{ steps.deployment.outputs.page_url }}
 
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/configure-pages@v5
 
@@ -130,5 +133,5 @@ jobs:
         run: |
           npx playwright test
         env:
-          WEBSITE_URL: ${{ vars.WEBSITE_URL }}
+          WEBSITE_URL: ${{ needs.preview-deploy.outputs.page_url }}
           TEST_TITLE: "Preview Test Report"
