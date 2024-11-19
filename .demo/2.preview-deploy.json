@@ -144,21 +144,35 @@
       ]
     },
     {
-      "title": "8. Log to job summary",
+      "title": "8. Add output",
       "steps": [
         {
           "action": "snippet",
           "contentPath": "./snippets/insert_and_highlight.json",
           "args": {
             "CONTENT_PATH": "./preview-deploy/step8.yml",
-            "CONTENT_POSITION": "85",
-            "HIGHLIGHT_POSITION": "86:88"
+            "CONTENT_POSITION": "76",
+            "HIGHLIGHT_POSITION": "77:78"
           }
         }
       ]
     },
     {
-      "title": "9. Commit and show site",
+      "title": "9. Log to job summary",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "./snippets/insert_and_highlight.json",
+          "args": {
+            "CONTENT_PATH": "./preview-deploy/step9.yml",
+            "CONTENT_POSITION": "88",
+            "HIGHLIGHT_POSITION": "89:91"
+          }
+        }
+      ]
+    },
+    {
+      "title": "10. Commit and show site",
       "steps": [
         {
           "action": "unselect",

@@ -28,5 +28,5 @@
         run: |
           npx playwright test
         env:
-          WEBSITE_URL: ${{ vars.WEBSITE_URL }}
+          WEBSITE_URL: ${{ needs.preview-deploy.outputs.page_url }}
           TEST_TITLE: "Preview Test Report"

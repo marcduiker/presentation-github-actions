@@ -38,14 +38,14 @@
           "contentPath": "./snippets/insert_and_highlight.json",
           "args": {
             "CONTENT_PATH": "./preview-validate/step2.yml",
-            "CONTENT_POSITION": "89",
-            "HIGHLIGHT_POSITION": "96:98"
+            "CONTENT_POSITION": "92",
+            "HIGHLIGHT_POSITION": "99:101"
           }
         }
       ]
     },
     {
-      "title": "3. Highlight variable",
+      "title": "3. Highlight output variable",
       "steps": [
         {
           "action": "unselect",
@@ -54,7 +54,7 @@
         {
           "action": "highlight",
           "path": "/.github/workflows/main.yml",
-          "position": "119"
+          "position": "122"
         }
       ]
     },
@@ -64,15 +64,6 @@
         {
           "action": "open",
           "path": "/e2e/tests/slides.spec.ts"
-        }
-      ]
-    },
-    {
-      "title": "5. Open repo and set the variable",
-      "steps": [
-        {
-          "action": "executeTerminalCommand",
-          "command": "echo \"https://estruyf.github.io/presentation-github-actions/\" | pbcopy && gh browse -n | xargs -I {} echo {}/settings | xargs open"
         }
       ]
     },
@@ -88,7 +79,7 @@
     },
     {
       "id": "2.preview.caching",
-      "title": "6. Add Playwright caching",
+      "title": "5. Add Playwright caching",
       "steps": [
         {
           "action": "executeVSCodeCommand",
@@ -110,17 +101,17 @@
           "action": "replace",
           "path": "/.github/workflows/main.yml",
           "contentPath": "./preview-validate/step6.yml",
-          "position": "112:113"
+          "position": "115:116"
         },
         {
           "action": "highlight",
           "path": "/.github/workflows/main.yml",
-          "position": "112:127"
+          "position": "115:130"
         }
       ]
     },
     {
-      "title": "7. Commit and show site",
+      "title": "6. Commit and show site",
       "steps": [
         {
           "action": "unselect",
