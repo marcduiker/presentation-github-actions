@@ -117,7 +117,7 @@ jobs:
 
       - uses: ./.github/actions/validate
         with:
-          WEBSITE_URL: ${{ needs.preview-deploy.outputs.page_url }}
+          website-url: ${{ needs.preview-deploy.outputs.page_url }}
           test-title: "Preview Test Report"
   
   production-deploy:
