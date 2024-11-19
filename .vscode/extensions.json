@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "eliostruyf.vscode-demo-time"
+    "eliostruyf.vscode-demo-time",
+    "eliostruyf.vscode-remote-control"
   ]
 }
