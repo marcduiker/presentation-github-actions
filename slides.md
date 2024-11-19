@@ -175,10 +175,10 @@ clicks: 1
 
 ```mermaid
 flowchart LR
-  crafting[Craft a workflow]
-  preview[Preview deployment]
-  validate[Validate deployment]
-  production[Deploy to production]
+  crafting[1\. Craft a workflow]
+  preview[2\. Preview deployment]
+  validate[3\. Validation]
+  production[4\. Deploy to production]
 
   classDef startClass fill:#44ffd2,color:black
   classDef endClass fill:#f141a8,color:black
@@ -190,9 +190,10 @@ flowchart LR
 
 <br />
 
-- **Preview**: Deploy to GitHub Pages
-- **Validate**: Test the deployment with Playwright
-- **Production**: Deploy to Azure
+1. **Crafting**: Create a workflow the first workflow
+2. **Preview**: Deploy to GitHub Pages
+3. **Validation**: Test the deployment with Playwright
+4. **Production**: Deploy to Azure
 
 <vscode-action
     click="1"
