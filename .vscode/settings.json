@@ -15,5 +15,5 @@
   "workbench.colorTheme": "Front Matter CMS Theme",
   "demoTime.showClock": true,
   "demoTime.timer": 60,
-  "demoTime.lineInsertionDelay": 0
+  "demoTime.lineInsertionDelay": 25
 }

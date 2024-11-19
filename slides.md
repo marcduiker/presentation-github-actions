@@ -13,7 +13,7 @@ themeConfig:
   code-padding: "0"
 ---
 
-# Test Automation with GitHub Actions and Playwright for Microsoft 365 solutions
+# From Code to Cloud: Automated Deployments with GitHub Actions
 
 &mdash; by [Elio Struyf](https://eliostruyf.com)
 
