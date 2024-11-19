@@ -74,6 +74,9 @@ jobs:
       name: preview
       url: ${{ steps.deployment.outputs.page_url }}
 
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/configure-pages@v5
 

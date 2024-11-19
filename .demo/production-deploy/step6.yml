@@ -6,5 +6,5 @@
 
       - uses: ./.github/actions/validate
         with:
-          website-url: ${{ vars.WEBSITE_URL }}
+          website-url: ${{ needs.preview-deploy.outputs.page_url }}
           test-title: "Preview Test Report"
