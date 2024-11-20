@@ -15,9 +15,7 @@ social3: elio@struyfconsulting.be
 ---
 
 <div class="recognitions">
-  <img src="/profile/github.svg" height="30px" />
-  <img src="/profile/mvp.svg" height="30px" />
-  <img src="/profile/gde.svg" height="30px" />
+  <a href="https://slides.elio.dev/20241120-visugxl">slides.elio.dev/20241120-visugxl</a>
 </div>
 
 <style>
@@ -25,6 +23,7 @@ social3: elio@struyfconsulting.be
     display: flex;
     gap: 1rem;
     background: #F8F8F8;
+    color: #000;
     padding: 0.5rem;
     border-radius: 0;
     position: absolute;
