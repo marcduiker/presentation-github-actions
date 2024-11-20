@@ -30,6 +30,12 @@ const ws = new WebSocket(`ws://localhost:${props.port}`);
 
 onMounted(() => {
   ws.onopen = function () {
+    const isDisabled = document.location.search.includes('disable');
+    if (isDisabled) {
+      console.log(`Demo disabled: ${props.command}`);
+      return;
+    }
+
     const body: { command: string, args?: string[] } = {
       command: props.command,
     };
