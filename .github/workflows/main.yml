@@ -11,16 +11,31 @@ env:
   azure_artifact: azure-website
   slides_artifact: slides
 
-jobs:
+env:
+  github_artifact: github-website
+  azure_artifact: azure-website
+  slides_artifact: slides
+
+env:
+  github_artifact: github-website
+  azure_artifact: azure-website
+  slides_artifact: slides
+
+          cache: npm
+
   build:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+      - name: Get repository name
+        run: echo "REPO_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
 
-      - uses: actions/setup-node@v4
+      - name: Build
+        run: npm run build -- --base /${{ env.REPO_NAME }}/
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          node-version: "lts/*"
+          name: ${{ env.github_artifact }}
+          path: dist
           cache: npm
 
       - name: Install dependencies
@@ -35,4 +50,27 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           name: ${{ env.github_artifact }}
-          path: dist
+          path: dist  
+  
+  pdf_export:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install playwright
+        run: npm i playwright-chromium
+
+      - name: Export slides
+        run: npm run export
+
+      - name: Upload slides
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.slides_artifact }}
+          path: "*.pdf"
